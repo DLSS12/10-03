@@ -1,0 +1,74 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+fieldset {
+    border: 3px solid #7a3565; /* Adicione uma borda de 2px sólida com cor cinza claro */
+    padding: 60px; /* Adicione algum preenchimento interno para afastar os elementos internos da borda */
+    margin: 100px; /* Adicione alguma margem ao redor do fieldset */
+    background: linear-gradient(to right, white, white,white,rgb(133, 73, 133), purple);
+    position: relative;
+    border-radius: 60px;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 35px;
+}
+
+/* Estilizando os rótulos (labels) */
+label {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 2px 20px;
+    border-radius: 30px;
+}
+
+input{
+border-radius: 10px;
+font-size: 20px;
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+  }
+
+#submit {
+    background-color: #000000;
+    color: white;
+    padding: 10px 55px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.text2{
+    font-size: 20px;
+}
+
+/* Adicionando media query para ajustes em telas menores */
+@media screen and (max-width: 600px) {
+    fieldset {
+        padding: 100px;
+        margin: 100px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    label {
+        padding: 2px 10px;
+        border-radius: 8px;
+    }
+
+    input {
+        border-radius: 8px;
+    }
+
+    #submit {
+        padding: 8px 12px;
+        border-radius: 8px;
+    }
+}
